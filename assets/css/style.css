@@ -125,7 +125,7 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, ion-icon, a, button, time, span { display: block;}
 
 button {
   font: inherit;
@@ -310,6 +310,29 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
+
+@media screen and (max-width: 600px) {
+  img,
+  ion-icon,
+  a,
+  button,
+  time,
+  span {
+    display: block;
+    height: 50px;
+  }
+
+  .sidebar {
+    margin-bottom: 15px;
+    min-height: 400px;
+    overflow: hidden;
+    transition: var(--transition-2);
+  }
+   ul.white-txt li {
+  color: #ffffff!important;
+}
+
+}
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
@@ -1890,7 +1913,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     z-index: 1;
   }
   ul.white-txt li {
-  color: #ffffff;
+  color: #ffffff!important;
   
   /* optional for readability */
 }
