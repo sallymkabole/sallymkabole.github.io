@@ -1966,3 +1966,278 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/*-----------------------------------*\
+  #PROJECTS PAGE
+\*-----------------------------------*/
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--bg-gradient-jet);
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  padding: 24px 28px;
+  transition: border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--orange-yellow-crayola);
+}
+
+.project-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.project-icon-box {
+  width: 44px;
+  height: 44px;
+  background: var(--bg-gradient-onyx);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--orange-yellow-crayola);
+  font-size: 22px;
+}
+
+.project-card-title {
+  color: var(--white-1);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  margin-bottom: 4px;
+}
+
+.project-status {
+  font-size: var(--fs-8);
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-card-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.project-highlights {
+  background: hsla(0, 0%, 100%, 0.03);
+  border-left: 2px solid var(--orange-yellow-crayola);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+
+.project-highlight-label {
+  font-size: var(--fs-8);
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.project-highlight-list {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-highlight-list li {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tag {
+  background: var(--bg-gradient-onyx);
+  border: 1px solid var(--jet);
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.project-note {
+  font-size: var(--fs-8);
+  color: var(--light-gray-70);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.about-text p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+
+
+/*-----------------------------------*\
+  #PROJECTS SECTIONS & TALKS & LEADERSHIP
+\*-----------------------------------*/
+
+.projects-section {
+  margin-bottom: 32px;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsl(0, 0%, 22%);
+}
+
+.section-label ion-icon {
+  font-size: 20px;
+  color: var(--orange-yellow-crayola);
+}
+
+.section-label .h3 {
+  color: var(--white-1);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+}
+
+/* Talk cards */
+.talks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.talk-card {
+  display: flex;
+  gap: 20px;
+  background: hsl(240, 2%, 13%);
+  border: 1px solid hsl(0, 0%, 22%);
+  border-radius: 14px;
+  padding: 24px;
+  transition: border-color 0.2s;
+}
+
+.talk-card:hover {
+  border-color: var(--orange-yellow-crayola);
+}
+
+.talk-card-left {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.talk-year {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  color: var(--orange-yellow-crayola);
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+}
+
+.talk-card-right {
+  flex: 1;
+}
+
+.talk-type-badge {
+  display: inline-block;
+  background: hsla(255, 80%, 70%, 0.15);
+  color: #b9a8f5;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.talk-title {
+  color: var(--white-1);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.talk-event {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  margin-bottom: 2px;
+}
+
+.talk-date {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  margin-bottom: 12px;
+}
+
+.talk-description {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.7;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #TALK LINK
+\*-----------------------------------*/
+
+a.talk-link,
+a.talk-link:link,
+a.talk-link:visited,
+a.talk-link:hover,
+a.talk-link:focus,
+a.talk-link:active {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  background: hsla(255, 80%, 70%, 0.15);
+  color: #b9a8f5 !important;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 5px 12px;
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+
+a.talk-link:hover {
+  background: hsla(255, 80%, 70%, 0.25) !important;
+}
+
+a.talk-link ion-icon {
+  font-size: 15px;
+}
